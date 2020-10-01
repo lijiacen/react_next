@@ -13,7 +13,7 @@
 // export default Index;
 
 import React, { useState } from "react";
-
+import "./test.css";
 export default function indexHooks() {
   const [index] = useState("index by hooks");
   return <div>{index}</div>;

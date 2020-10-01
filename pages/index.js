@@ -14,7 +14,14 @@
 
 import React, { useState } from "react";
 import "./test.css";
+import { Button } from "antd";
+
 export default function indexHooks() {
   const [index] = useState("index by hooks");
-  return <div>{index}</div>;
+  return (
+    <div>
+      {index}
+      <Button>click it</Button>
+    </div>
+  );
 }

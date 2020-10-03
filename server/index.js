@@ -7,9 +7,20 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+const routes = require("./routes");
+
+const sessionMiddleware = require("./middlewares/session");
+
 //等编译完成，开启koa server
 app.prepare().then(() => {
   const server = new Koa();
+  server.keys = ["some secret hurr"];
+
+  //session中间件
+  sessionMiddleware(server);
+
+  //路由
+  routes(server);
 
   //koa中间件
   server.use(async (ctx) => {

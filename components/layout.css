@@ -1,0 +1,28 @@
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.logo {
+  height: 40px;
+  width: 40px;
+  margin: 12px;
+}
+.search_warpper {
+  margin-left: 20px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user {
+  height: 40px;
+  width: 40px;
+  margin: 12px;
+}

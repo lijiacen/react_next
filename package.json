@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/lijiacen/react_next#readme",
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
     "@zeit/next-css": "^1.0.1",
     "antd": "^4.6.6",
     "axios": "^0.20.0",
